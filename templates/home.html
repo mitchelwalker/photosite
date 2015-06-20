@@ -1,0 +1,170 @@
+{% include 'navbar.html' %}
+{% include 'base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+<style>
+    
+          .featured-row {
+        text-align:center;
+        margin-bottom:;
+        min-height:200px;
+        padding: 40px 0px;
+        
+      }
+
+
+
+          .featured-row2 {
+        text-align:center;
+        margin-bottom:;
+        min-height:50px;
+        padding: 5px 0px;
+	padding-top; 5px;
+
+      }
+    
+    
+</style>
+
+<div class='container'>
+	<div class='row featured-row2'>
+		<p>Phoenix ComiCon 2015 Pics are Here! Click the Album above to see more!</p>
+		<p>Bodypainting Pictures Coming soon!!</p>
+	</div>
+</div>
+
+<hr/>
+
+ 
+<!------- Home Gallery ------>  
+
+
+<div class='container-fluid'>
+
+<div class='row featured-row'>
+    <div class='col-sm-12'>
+
+        <div class='col-sm-4'>    
+    	    <div id='links'>
+			    <a href="{{ media_url }}{{ ran1.image.name }}" data-gallery>
+				    <img src="media/{{ ran1.thumbnail2.name }}" alt="{{ image.name }}"/></a>
+    	    </div>
+        </div>
+
+        <div class='col-sm-4'>  
+		    <div id='links'>
+			    <a href="{{ media_url }}{{ ran2.image.name }}" data-gallery>
+				    <img src="media/{{ ran2.thumbnail2.name }}" alt="{{ image.name }}"/></a>
+    	    </div>
+        </div>
+   
+        <div class='col-sm-4'>  
+		    <div id='links'>
+			    <a href="{{ media_url }}{{ ran3.image.name }}" data-gallery>
+				    <img src="media/{{ ran3.thumbnail2.name }}" alt="{{ image.name }}"/></a>
+    	    </div>
+        </div>
+    
+    </div>
+</div>    
+
+<div class='row featured-row'>
+    <div class='col-sm-12'>
+        
+        <div class='col-sm-4'>  
+		    <div id='links'>
+			    <a href="{{ media_url }}{{ ran4.image.name }}" data-gallery>
+				    <img src="media/{{ ran4.thumbnail2.name }}" alt="{{ image.name }}"/></a>
+    	    </div>
+        </div>
+
+        <div class='col-sm-4'>  
+	    	<div id='links'>
+		    	<a href="{{ media_url }}{{ ran5.image.name }}" data-gallery>
+			    	<img src="media/{{ ran5.thumbnail2.name }}" alt="{{ image.name }}"/></a>
+	        </div>
+        </div>  
+
+        <div class='col-sm-4'>  
+		    <div id='links'>
+			    <a href="{{ media_url }}{{ ran6.image.name }}" data-gallery>
+				    <img src="media/{{ ran6.thumbnail2.name }}" alt="{{ image.name }}"/></a>
+    	    </div>
+	    </div>
+   
+    </div>	    
+</div>
+
+<div class='row featured-row'>
+    <div class='col-sm-12'>
+        
+        <div class='col-sm-4'>  
+		    <div id='links'>
+			    <a href="{{ media_url }}{{ ran7.image.name }}" data-gallery>
+				    <img src="media/{{ ran7.thumbnail2.name }}" alt="{{ image.name }}"/></a>
+    	    </div>
+        </div>
+
+        <div class='col-sm-4'>  
+	    	<div id='links'>
+		    	<a href="{{ media_url }}{{ ran8.image.name }}" data-gallery>
+			    	<img src="media/{{ ran8.thumbnail2.name }}" alt="{{ image.name }}"/></a>
+	        </div>
+        </div>  
+
+        <div class='col-sm-4'>  
+		    <div id='links'>
+			    <a href="{{ media_url }}{{ ran9.image.name }}" data-gallery>
+				    <img src="media/{{ ran9.thumbnail2.name }}" alt="{{ image.name }}"/></a>
+    	    </div>
+	    </div>
+   
+    </div>	    
+</div>
+
+</div>
+
+
+<div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}
+
+
