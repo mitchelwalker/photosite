@@ -1,41 +1,11 @@
-<<<<<<< HEAD
+Photography Website
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+This is a basic photography based website with a django backbone. 
 
+uploading images to the site is done via the Django admin panel. When uploading images, the images will take a Name, Tag, and Album filed. These fileds are stored in the sqllite database to later call upon the images. Upon uploading, Django will create two additional images of different sizes for use as thumbnames.
 
-Welcome to your Django project on Cloud9 IDE!
+The front end of the website is build off of Boostrap. (still under consturction) 
 
-Your Django project is already fully setup. Just click the "Run" button to start
-the application. On first run you will be asked to create an admin user. You can
-access your application from 'https://mwalkerphotos-th3gre3k.c9.io/' and the admin page from 
-'https://mwalkerphotos-th3gre3k.c9.io/admin'.
+Each gallery page will take the album name to fetch the images from teh database for display on the page. 
 
-## Starting from the Terminal
-
-In case you want to run your Django application from the terminal just run:
-
-1) Run syncdb command to sync models to database and create Django's default superuser and auth system
-
-    $ python manage.py syncdb
-
-2) Run Django
-
-    $ python manage.py runserver $IP:$PORT
-    
-## Support & Documentation
-
-Django docs can be found at https://www.djangoproject.com/
-
-You may also want to follow the Django tutorial to create your first application:
-https://docs.djangoproject.com/en/1.7/intro/tutorial01/
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
-=======
-# photosite
->>>>>>> 56c3b850f56df141440ba5a67529b2e75161041c
+The home page takes a random sample of images either from a specific database or from all databases ( can be configured) and displayes that random set to the home page. 
